@@ -1,10 +1,10 @@
 # Django settings for Ejemplo_django project.
-
-DEBUG = True
+#encoding:utf-8
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    # ('Your Name', 'your_email@example.com'),
+    ('Guillermo Vilchis', 'gvilchis23@gmail.com'),
 )
 
 MANAGERS = ADMINS
@@ -107,6 +107,9 @@ TEMPLATE_DIRS = (
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
 )
+# Identificando la ruta del proyecto
+import os
+RUTA_PROYECTO = os.path.dirname(os.path.realpath(__file__))
 
 INSTALLED_APPS = (
     'django.contrib.auth',
@@ -115,6 +118,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'Ejemplo_django',
     # Uncomment the next line to enable the admin:
     # 'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
